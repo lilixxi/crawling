@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경깔아보기</title>
+    <style>
+        div {
+          width: 300px;
+          height: 300px;
+          border: 20px double black; /* double : 두줄  */
+          padding: 20px;
+          background-color: grey;
+          background-clip: border-box;
+          background-clip: padding-box;
+          background-clip: content-box;
+          /* 배경의 적용 범위 */
+          /* color는 clip으로 범위를 정해줌 */
+          background-image: url('/img/som1.jpeg');
+          background-size: 350px 350px;
+          /* background size 맞추어 주기 */
+          background-size: 250px 220px;
+          /* size 줄임 >> 교차 효과 */
+          background-repeat: no-repeat; /* 자주사용 */
+          /* 교차 효과 없애고 싶을 때 */
+          /*background-repeat: repeat-x;*/
+          /* x방향으로 repeat 하고 싶을 때 */
+          /*background-repeat: repeat-y;*/
+          /* y방향으로 repeat 하고 싶을 때 */
+          background-origin: padding-box; /*패딩에 맞춰서*/
+          background-origin: content-box; /*디폴트*/
+          /*background-origin: border-box;*/
+          /* img는 origin으로 어디서 부터 시작할 지 정해줌 */
+          background-position: center; /*가운데 정렬*/
+          /* center, top, left, bottom, left, right 조합도 가능 left bottom */
+          /* background-position: 100px 50px; */
+          text-align: center;
+        
+        }
+      </style>
+</head>
+<body>
+    <div>
+        <p>솜이야 내려와라</p>
+    </div>
+</body>
+</html>
