@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색깔 지정하기</title>
+    <!-- 구글 폰트 링크 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+<!-- 폰트를 가져와서 스타일 시트에 연결 -->
+    <style>
+        html{
+            /* html 안에 있는 모든 것에 적용 */
+            font-size: 10px;
+        }
+        body{
+            font-size: 20px;
+        }
+        /* p 테그의 one 이라는 id 에 적용 */
+        p#one{
+            color: rgb(100%, 50%, 50%);
+            font-size: 30px;
+            font-weight: 100px; /*폰트 두께*/
+            line-height: 10px; /*행 높이*/
+            text-align: justify; /*글 정렬/ justify : 양쪽 정렬*/
+            
+        }
+        p#two{
+            color: hsl(300, 50%, 50%);
+            font-size: 2rem;/*rem : 디폴트의 배수*/
+            /*ex) html 에서 루트폰트 10 -> 3배 30px */
+            text-align: center;
+        }
+        p#three{
+            color: rgba(0%, 50%, 50%, 0.1);
+            /*a : 투명도 0~1 사이*/
+            font-size: 500;
+            text-align: right;
+        }
+        p#four{
+            color: #1f4346bc;
+            /*색깔 16진수로 표현*/
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <p id="one">🥜고소한🥜</p>
+        <p id="two">🥜아몬드와🥜</p>
+        <p id="three">🥜함께 여는🥜</p>
+        <p id="four">🥜아침🥜</p>
+        <!--각각의 p tag 구분 위해 id 부여-->
+    </div>
+    <div>
+        
+    </div>
+</body>
+</html>
