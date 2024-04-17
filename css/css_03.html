@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 기본</title>
+    <!-- 
+        area class 의 크기 조정  
+        '%' : 내가 속한 영역을 기준, 백분율 계산
+          >> 내가 속한 영역에 관련 값이 있어야 적용 가능
+          >> body의 height 는 적용되지 않음 (width 만)
+          >> 이유? body의 width 의 기본 값은 화면크기
+          >> height는 기본값이 없음
+    -->
+    <style>
+        .area{
+            width: 200px;
+            width: 50%;
+            height: 100px;
+        }
+
+        .red{
+            border-width: 5px;
+            border-style: solid;
+            border-style: dashed;
+            border-style: dotted;
+            border-color: red;
+        }
+       
+        .green{
+            /* 단축속성 */
+            border: 3px dashed green;
+            border-radius: 20px 30px 100px;
+            /* 시계방향 */
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2><em>"흐린 기억 속의 그대"</em> - 현진영</h2>
+    <p class="red">안개빛 조명은 흐트러진 내 몸을 감싸고</p>
+    <!-- 
+        area , green 두개의 클래스를 가짐
+        단축속성 : 공백으로 속성값을 구분 
+    -->
+    <p class="area green">술에 취해 비틀거리는 흐~ 나의 모습 이제는 싫어</p>
+    <p>뚜르르르 예~</p>
+</body>
+</html>
