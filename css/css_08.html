@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h2>의사클래스</h2>
+    <title>의사클래스</title>
+
+    <style>
+        .menu{
+            padding: 10px;
+            border-bottom: 1px solid brown;
+        }
+
+        li > a{
+            display: inline-block;
+            width: 80px;
+            padding: 10px;
+            text-decoration: none;
+        }
+        a:hover{
+            /* 마우스를 가져다 댔을때 액션 */
+            color: white;
+            background-color:  gray;
+        }
+        li:nth-child(3){
+            /*전체 li 테그의 3번째 자식만 */
+            font-size: 25px;
+        }
+        a::first-letter{
+            /* :: 의사클래스 
+                a 테그의 첫번째 글자는 모두 */
+            color: blue;
+        }
+        a::after{
+            /* after 콘텐츠 뒤에 콘텐츠 추가 및 스타일링 */
+            content: '<>'; /* 콘텐츠 추가*/
+            color: violet; 
+        }
+        a::before{
+            /* before 콘텐츠 앞에 콘텐츠 추가 및 스타일링 */
+            content: '//';
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul class="menu">
+            <li><a href="#">사전</a></li>
+            <li><a href="#">뉴스</a></li>
+            <li><a href="#">증권</a></li>
+            <li><a href="#">지도</a></li>
+            <!--  "#" : 실제로는 어디로도 이동하지 않는 더미 링크 -->
+          </ul>
+    </div>
+</body>
+</html>
